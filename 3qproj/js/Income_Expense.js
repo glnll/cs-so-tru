@@ -8,11 +8,7 @@ function submit(){
 	var option = category.options[category.selectedIndex].text;
 
 	//create new date
-	var date = new Date();
-	var month = date.getMonth() + 1;
-	var day = date.getDate();
-	var year = date.getFullYear();
-	var fulldate = month + "/" + day + "/" + year;
+	var date = new Date().toLocaleDateString('en-US');
 
 	//create new table cells
 	var tdcategory = document.createElement("td");
