@@ -24,12 +24,6 @@ function submit(){
 	tdcost.innerHTML = document.getElementById("cost").value;
 	tddate.innerHTML = fulldate;
 
-	//compute for total IDK ANYMORE MAN
-	var total = [];
-	var add = parseFloat(document.getElementById("cost").value); // input value
-	var sum = localStorage.setItem("sum", t + add);
-	var total = sum + add;
-
 	//print total
 	document.getElementById("total").innerHTML = sum;
 
