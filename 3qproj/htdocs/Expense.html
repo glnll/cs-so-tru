@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expense Table</title>
+	<script src="../js/Income_Expense.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<nav>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="Income.html">Income</a></li>
+			<li><a href="Expense.html">Expense</a></li>
+		</nav>
+
+		<header>
+			<h1>Expense</h1>
+		</header>
+
+		<section id="table">
+			<table>
+				<tr>
+					<th>Category</th>
+					<th>Cost</th>
+					<th>Date</th>
+				</tr>
+
+				<tbody id="tableBody">
+				</tbody>
+
+				<tr>
+					<td>Total:</td>
+					<td id="total"></td>
+				</tr>
+
+			</table>
+		</section>
+		<br>
+
+		<section id="inputs">
+			<select id="category">
+				<option> Living Expenses</option>
+				<option> Debt </option>
+				<option> Investment </option>
+				<option> Miscellaneous </option>
+			</select>
+			<input type="text" id="cost">
+			<input type="button" onclick="submit()" value="Log-In Expense">
+		</section>
+
+
+
+	</div>
+
+</body>
+</html>

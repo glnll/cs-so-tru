@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Income Table</title>
+	<script src="../js/Income_Expense.js"></script>
+</head>
+<body>
+
+	<div id="wrapper">
+		<nav>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="Income.html">Income</a></li>
+			<li><a href="Expense.html">Expense</a></li>
+		</nav>
+
+		<header>
+			<h1>Income</h1>
+		</header>
+
+		<section>
+			<table>
+				<tr>
+					<th>Category</th>
+					<th>Gain</th>
+					<th>Date</th>
+				</tr>
+
+				<tbody id="tableBody">
+				</tbody>
+			</table>
+
+			<select id="category">
+				<option>Salary</option>
+				<option>Business</option>
+				<option>Property</option>
+				<option>Investments</option>
+			</select>
+
+			<input type="text" id="cost">
+			<input type="button" onclick="submit()" value="Log-In Income">
+
+		</section>
+		
+	</div>
+
+</body>
+</html>
