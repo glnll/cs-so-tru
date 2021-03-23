@@ -73,21 +73,106 @@ th{
 
 
 /* #;
-border-bottom: 5px #B0947A;
-border-bottom: 5px #AE7684;
-border-bottom: 5px ##9F9F9F
-#
-*/
+body{
+	background-color: #F6F3EF;
+}
+
+#wrapper{
+	width: 100%;
+	margin: 0 auto; 
+	overflow: auto;
+}
+
+/* navigation bar */
+nav{
+	background-color: #EBE9E6;
+	overflow: hidden;
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+	float: left;
+}
+
+a{
+	font-family: tahoma;
+	color: #BD6464;
+	font-size: 160%;
+	text-decoration: none;
+	padding: 30px;
+	font-weight: bold;
+	display: block;
+}
+
+/* hover of navigation */
+a:hover{
+	background-color:#E8E4DF;
+}
+
+h1{
+	text-align: center;
+	font-family: tahoma;
+	font-size: 200%;
+}
+
+/* table */
+
+#tablewrap{
+	overflow: hidden;
+	height: 400px;
+	overflow-y: scroll;
+	margin-top: 0;
+}
+
+table{
+	width: 100%;
+	display: inline-block;
+	margin-top: 0;
+}
+
+th{
+	color: #945B3D;
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 160%;
+	width: 33%;
+	border-bottom: 2px solid #AE7684;
+	position: absolute;
+	background-color: #F6F3EF;
+	padding-top: 5px;
+}
+
+#tableBody{
+	margin: 4% 0 0 0%;
+	display: block;
+
+}
+
+#thCategory{
+	margin-left: 0;
+}
+
+#thGain{
+	margin-left: 33%;
+}
+
+#thDate{
+	margin-left: 66%;
+}
 
 td{
 	color: #8e8d8a;
 	font-weight: bold;
 	font-family: verdana; 
 	font-size: 90%;
-	width: 33%;
+	width: 38%;
 	text-align: center;
 }
 
+tr{
+	display: block;
+}
 /* select tag */
 select{
 	width:11%;
@@ -134,5 +219,6 @@ select, #cost, #button{
 .select-selected {
   background-color: #945B3D;
 } */
+
 
 
