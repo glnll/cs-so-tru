@@ -37,9 +37,16 @@ a:hover{
 }
 
 /* table */
+
+#tablewrap{
+	overflow: hidden;
+	height: 500px;
+	overflow-y: scroll;
+}
+
 table{
 	width: 100%;
-	margin: 0% 2% 3% 2%;
+	margin: 1% 2% 3% 2%;
 }
 
 th{
@@ -48,7 +55,29 @@ th{
 	font-weight: bold;
 	font-size: 160%;
 	width: 33%;
+	border-bottom: 2px solid #AE7684;
+	position: absolute;
 }
+
+#thCategory{
+	margin-left: 0;
+}
+
+#thGain{
+	margin-left: 33%;
+}
+
+#thDate{
+	margin-right: 33%;
+}
+
+
+/* #;
+border-bottom: 5px #B0947A;
+border-bottom: 5px #AE7684;
+border-bottom: 5px ##9F9F9F
+#
+*/
 
 td{
 	color: #8e8d8a;
