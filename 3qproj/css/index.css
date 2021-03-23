@@ -24,46 +24,22 @@ h4 {
 
 #income {
 	text-align: center;
-	padding: 0.9%;
+	padding: 0.7%;
 }
 
-#incomeCategory, #expenseCategory{
-	padding: 1%;
-}
-
-#salary {
-	float:left;
-}
-
-#business {
-	float:left;
-}
-
-#property {
-	float: left;
-}
-
-#investments {
-	float: left;
-}
-
-#livingExpenses {
-	float: left;
-}
-
-#debt {
-	float:left;
-}
-
-#investment {
-	float: left;
-}
-
-#miscellaneous {
-	float: left;
-}
-
-#Expense {
+.categories {
+	padding-bottom: 2%;
 	text-align: center;
-	padding: 0.9%;
+}
+
+.categories2 {
+	float: left;
+	position: relative;
+	width: 7%;
+	margin-left: 15%;
+}
+
+#expense {
+	text-align: center;
+	padding: 0.7%;
 }
