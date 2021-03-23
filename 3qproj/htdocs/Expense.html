@@ -6,7 +6,7 @@
 	<link rel="icon" type="images/x-icon" href="images/logo.png">
 
 	<script src="../js/Income_Expense.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/income.css">
+	<link rel="stylesheet" type="text/css" href="../css/income_expense.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -21,15 +21,18 @@
 		</header>
 
 		<section>
-			<table>
-				<tr>
-					<th>Category</th>
-					<th>Cost</th>
-					<th>Date</th>
-				</tr>
+			<div id="tablewrap">
+				<table>
+					<tr>
+						<th id="thCategory">Category</th>
+						<th id="thGain">Cost</th>
+						<th id="thDate">Date</th>
+					</tr>
 
-				<tbody id="tableBody">
-				</tbody>
+					<tbody id="tableBody">
+					</tbody>
+				</table>
+			</div>
 
 				<!-- <tr>
 					<td>Total:</td>
@@ -39,13 +42,14 @@
 			</table>
 
 		</section>
-		<section id="inputs">
+		<section class="inputs">
 			<select id="category">
 				<option> Living Expenses</option>
 				<option> Debt </option>
 				<option> Investment </option>
 				<option> Miscellaneous </option>
 			</select>
+
 			<input type="text" id="cost">
 			<input type="button" onclick="submit()"  id="button"value="Log-In Expense">
 		</section>
