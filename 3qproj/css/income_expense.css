@@ -1,0 +1,109 @@
+body{
+	background-color: #F6F3EF;
+}
+
+#wrapper{
+	width: 100%;
+	margin: 0 auto; 
+	overflow: auto;
+}
+
+/* navigation bar */
+nav{
+	background-color: #EBE9E6;
+	overflow: hidden;
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+	float: left;
+
+}
+
+a{
+	font-family: tahoma;
+	color: #BD6464;
+	font-size: 160%;
+	text-decoration: none;
+	padding: 30px;
+	font-weight: bold;
+	display: block;
+}
+
+/* hover of navigation */
+a:hover{
+	background-color:#E8E4DF;
+}
+
+/* table */
+table{
+	width: 100%;
+	margin: 0% 2% 3% 2%;
+}
+
+th{
+	color: #945B3D;
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 160%;
+	width: 33%;
+}
+
+td{
+	color: #8e8d8a;
+	font-weight: bold;
+	font-family: verdana; 
+	font-size: 90%;
+	width: 33%;
+	text-align: center;
+}
+
+/* select tag */
+select{
+	width:11%;
+	margin-left: 13%;
+}
+
+#cost{
+	margin-left: 22%;
+	width:11%;
+}
+
+#button{
+	margin-left: 23.5%;
+	width: 9%;
+	font-weight: bold;
+}
+
+select, #cost, #button{
+	padding: 8px 0;
+	color: #E85a4f;
+	font-family: verdana;
+	background-color: white;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	border:2px solid #EBE9E6;
+}
+
+#category:hover, #cost:hover, #button:hover{
+	background-color: #945B3D;
+	color: white;
+	border:3px solid white;
+}
+
+/*
+.custom-select{
+	position: relative;
+	width: 10%;
+}
+
+.custom-select select {
+  display: none; 
+}
+
+.select-selected {
+  background-color: #945B3D;
+} */
+
+
