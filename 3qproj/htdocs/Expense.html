@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Expense Table</title>
+	<title>Moneyge: Expense Table</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.2">
+	<link rel="icon" type="images/x-icon" href="images/logo.png">
+
 	<script src="../js/Income_Expense.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/income.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -13,10 +17,10 @@
 		</nav>
 
 		<header>
-			<h1>Expense</h1>
+			<h1> </h1>
 		</header>
 
-		<section id="table">
+		<section>
 			<table>
 				<tr>
 					<th>Category</th>
@@ -27,15 +31,14 @@
 				<tbody id="tableBody">
 				</tbody>
 
-				<tr>
+				<!-- <tr>
 					<td>Total:</td>
 					<td id="total"></td>
-				</tr>
+				</tr> -->
 
 			</table>
-		</section>
-		<br>
 
+		</section>
 		<section id="inputs">
 			<select id="category">
 				<option> Living Expenses</option>
@@ -44,7 +47,7 @@
 				<option> Miscellaneous </option>
 			</select>
 			<input type="text" id="cost">
-			<input type="button" onclick="submit()" value="Log-In Expense">
+			<input type="button" onclick="submit()"  id="button"value="Log-In Expense">
 		</section>
 
 
