@@ -1,5 +1,4 @@
 
-
 function submit(){
 	//make new table body and row
 	var tableBody = document.getElementById("tableBody");
@@ -53,6 +52,25 @@ function submit(){
 	newrow.appendChild(tdcost);
 	newrow.appendChild(tddate);
 	tableBody.appendChild(newrow);
+
+	// local storage of each category
+	var total = 0;
+	localStorage.setItem("total", total );
+	var input = parseFloat(document.getElementById("cost").value);
+
+	if( input != "NaN"){
+		total = parseFloat(localStorage.getItem("total"));
+		total += input;
+		localStorage.setItem("total", total);
+	}
+	else{
+		total = localStorage.getItem("total");
+	}
+
+	//append to p element
+	document.getElementById("total").innerHTML = total; 
+
+
 }
 
 
