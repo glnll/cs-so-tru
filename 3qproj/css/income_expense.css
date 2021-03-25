@@ -74,6 +74,7 @@ th{
 	overflow: hidden;
 	height: 400px;
 	overflow-y: scroll;
+	width: 100%;
 
 }
 
@@ -101,6 +102,7 @@ td{
 
 tr{
 	display: block;
+	width: 100%;
 }
 /* select tag */
 select{
@@ -113,13 +115,18 @@ select{
 	width: 10%;
 }
 
-#button{
-	margin-left: 20%;
+#submit, #reset{
+	margin-left: 18%;
 	width: 10%;
 	font-weight: bold;
 }
 
-select, #cost, #button{
+#reset{
+	margin: 0;
+	width: 8%;
+}
+
+select, #cost, #reset, #submit{
 	padding: 8px 0;
 	color: #E85a4f;
 	font-family: verdana;
@@ -139,18 +146,22 @@ select, #cost, #button{
 	text-align: center;
 	width: 97.5%;
 	margin-top: 0.5%;
+	height: 90%;
 }
 
-/*
-.custom-select{
-	position: relative;
-	width: 10%;
+/* total element */
+p{
+	font-family: tahoma;
+	color: #BD6464;
+	font-size: 140%;
+	font-weight: bold;
+	margin: 2% 0 0 12%;
+	display: inline-block;
 }
 
-.custom-select select {
-  display: none; 
-}
+p#total{
+	text-align: center;
+	margin-left: 25%;
+	color: #8F3178;
 
-.select-selected {
-  background-color: #945B3D;
-} */
+}
