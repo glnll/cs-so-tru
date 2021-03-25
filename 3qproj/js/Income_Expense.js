@@ -54,23 +54,35 @@ function submit(){
 	tableBody.appendChild(newrow);
 
 	// local storage of each category
-	var total = 0;
-	localStorage.setItem("total", total );
-	var input = parseFloat(document.getElementById("cost").value);
+	if(localStorage.getItem("total") == null){
+		var total = 0;
+		localStorage.setItem("total", total );
+		console.log(total);
+	}
 
-	if( input != "NaN"){
+	console.log(total);
+	var input = parseFloat(document.getElementById("cost").value);
+	console.log(input);
+
+	if( isNaN(input) != true){
 		total = parseFloat(localStorage.getItem("total"));
 		total += input;
 		localStorage.setItem("total", total);
+		console.log(total);
 	}
 	else{
 		total = localStorage.getItem("total");
+		console.log(total);
 	}
+	console.log(total);
 
 	//append to p element
 	document.getElementById("total").innerHTML = total; 
 
+}
 
+function reset(){
+	localStorage.removeItem("total");
 }
 
 
